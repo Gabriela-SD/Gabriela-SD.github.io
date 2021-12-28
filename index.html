@@ -14,7 +14,8 @@
   <body>
     <header id="header" class="scroll">
       <nav class="container">
-        <a href="https://instagram.com/atelie.da.bubu?utm_medium=copy_link" target="_blank" class="logo">Atelie.da.Bubu</a>      
+        <a href="https://instagram.com/atelie.da.bubu?utm_medium=copy_link" target="_blank" class="logo">Atelie.da.Bubu</a> <a href="https://instagram.com/atelie.da.bubu?utm_medium=copy_link" target="_blank">
+          <i class="icon-instagram"></i>     
       <div class="menu">
         <ul class="grid">
           <li><a class="title" href="#home">Início</a></li>
@@ -43,7 +44,7 @@
       <div class="div-1"></div>
 
       <section class="section" id="about">
-        <h3>Sobre</h3>
+        <h3>O Ateliê</h3>
         <div class="container grid">
          
           <div class="txtAbout">
@@ -56,8 +57,7 @@
 
       <section class="section" id="galeria">
         <h3>Galeria</h3>
-        <div class="container grid">
-          
+        <div class="container grid">          
           <div class="cards grid">
             <div class="card">
               <i class="marcador"><img src="img/marcadorPrincipal.png"></i>
@@ -65,8 +65,21 @@
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
                 distinctio neque blanditiis, dolorem aperiam nulla explicabo
-                asperiores
+                asperiores <a href= "#poppag">Clique aqui</a>
               </p>
+              <div id="poppag" class="pop">
+                <div>
+                  <a href="#close" tilte="close" class="close">X</a>
+                  
+                    <h4>Marcador de página</h4> 
+                    <p>
+                    <br>descrição do produto:
+                    <br>tamanho: 100 x 200 mm
+                    <br>papel: sulfite catolinado	
+                    <br>feito em aquarela 
+                  </p>			
+                </div>
+              </div>
             </div>
             <div class="card">
               <i class="mar"><img src="img/marPrincipal.png"></i>
@@ -74,8 +87,21 @@
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
                 distinctio neque blanditiis, dolorem aperiam nulla explicabo
-                asperiores
+                asperiores <a href="#popmar">Clique aqui</a>
               </p>
+              <div id="popmar" class="pop">
+                <div>
+                  <a href="#close" tilte="close" class="close">X</a>
+                  
+                    <h4>Tema Mar</h4> 
+                    <p>
+                    <br>descrição do produto:
+                    <br>tamanho: 100 x 200 mm
+                    <br>papel: sulfite catolinado	
+                    <br>feito em aquarela 
+                  </p>			
+                </div>
+              </div>
             </div>
             <div class="card">
               <i class="dog"><img src="img/dogPrincipal.png"></i>
@@ -83,8 +109,21 @@
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
                 distinctio neque blanditiis, dolorem aperiam nulla explicabo
-                asperiores
+                asperiores <a href="#popdog">Clique aqui</a>
               </p>
+              <div id="popdog" class="pop">
+                <div>
+                  <a href="#close" tilte="close" class="close">X</a>
+                  
+                    <h4>Tema Dogs</h4> 
+                    <p>
+                    <br>descrição do produto:
+                    <br>tamanho: 100 x 200 mm
+                    <br>papel: sulfite catolinado	
+                    <br>feito em aquarela 
+                  </p>			
+                </div>
+              </div>
             </div>
             <div class="card">
               <i class="flores"><img src="Img/floresPrincipal.png"></i>
@@ -92,8 +131,21 @@
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
                 distinctio neque blanditiis, dolorem aperiam nulla explicabo
-                asperiores
+                asperiores <a href="#popflor">Clique aqui</a>
               </p>
+              <div id="popflor" class="pop">
+                <div>
+                  <a href="#close" tilte="close" class="close">X</a>
+                  
+                    <h4>Tema Flores</h4> 
+                    <p>
+                    <br>descrição do produto:
+                    <br>tamanho: 100 x 200 mm
+                    <br>papel: sulfite catolinado	
+                    <br>feito em aquarela 
+                  </p>			
+                </div>
+              </div>
             </div>
             <div class="card">
               <i class="outros"></i>
@@ -101,8 +153,21 @@
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
                 distinctio neque blanditiis, dolorem aperiam nulla explicabo
-                asperiores
+                asperiores <a href="#popoutros">Clique aqui</a>
               </p>
+              <div id="popoutros" class="pop">
+                <div>
+                  <a href="#close" tilte="close" class="close">X</a>
+                  
+                    <h4>Diversos</h4> 
+                    <p>
+                    <br>descrição do produto:
+                    <br>tamanho: 100 x 200 mm
+                    <br>papel: sulfite catolinado	
+                    <br>feito em aquarela 
+                  </p>			
+                </div>
+              </div>
             </div>
           </div>
              </section>
@@ -112,42 +177,54 @@
       <section class="section" id="services">
         
           <h3>Encomendas</h3>
-          <div class="container grid">
-          <p>Faça sua encomenda preenchendo os campos a seguir ou entre em <a href="#contact">contato</a> com a gente!</p>
-          <form name="myform" id="myform">
-            <p class="nome">
-              <label for="nome">Nome: </label><br />
+        <div class="container grid">
+          <p class="txtServices">Faça sua encomenda preenchendo os campos a seguir ou entre em <a href="#contact">contato</a> com a gente!</p>
+          
+          <form name="myform" id="myform" action="https://formsubmit.co/ateliedabubu@gmail.com" method="POST">
+            <div class="form-input">
+              <label for="nome">Nome: </label>
               <input
                 type="text"
                 id="nomeid"
+                class="txt-place"
                 placeholder="Ex: Fulano da Silva"
                 required="required"
                 name="nome"
               />
-            </p>
-            <p class="fone">
-              <label for="fone"> Fone: </label> <br />
-              <input
-                type="phone"
-                id="foneid"
-                placeholder="(xx)xxxxx-xxxx"
-                name="fone"
-              />
-            </p>
-            <p>
-              <label for="email"> Email: </label> <br />
+            </div>
+            <div class="form-input">
+              <label for="fone"> Fone: </label> 
+           <input type="phone" name="fone" required="required" placeholder="(xx)xxxxxxxxx" onkeyup="
+                var fone = this.value;
+                if (fone.match(/^\d{2}$/) !== null) {
+                   this.value = '(' + fone + ')';
+               } else if (fone.match(/^\d{5}\-\d{4}$/) !== null) {
+                   this.value = fone + '-';
+                }  
+                " maxlength="13">
+            </div>
+            <div class="form-input">
+              <label for="email"> Email: </label> 
               <input
                 type="email"
                 id="emailid"
+                class="txt-place"
                 placeholder="fulano@mail.com"
                 name="email"
                 required="required"
               />
-            </p>
-            <p>
-              <textarea placeholder="mensagem" required="required"></textarea>
-            </p>
-            <button type="submit" form="myform">Enviar</button>
+            </div>
+            <div class="form-input">
+              <textarea class="txt-place" placeholder="Escreva sua mensagem aqui" 
+              name="mensagem" required="required"></textarea>
+            </div>
+            <div class='form-input' >
+            <button type="submit" form="myform">Enviar</button></div>
+            <div>
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/email.html">
+            <input type = "hidden" name = "_autoresponse" value = "recebemos sua mensagem em breve entraremos em contato. (retorno de resposta em até 24)">
+            <input type = "hidden" name = "_cc" value = "gabriela.deamatis@gmail.com"></div>
+
           </form>
         </div>
       </section>
@@ -156,7 +233,7 @@
 
       <section class="section" id="contact">
           <h3>Contatos</h3>
-         <div class="container grid">
+        <div class="container grid">
           <p>
             Entre em contato com  <strong class="logo">Atelie.da.Bubu </strong>, queremos tirar suas dúvidas,
               ouvir suas críticas e sugestões.
@@ -169,20 +246,18 @@
               class="button"
               target="_blank"
               ><i class="icon-whatsapp"></i> Entrar em contato</a>
-          </div>
-
-          <div class="links">
             <ul class="grid">
               <li><i class="icon-phone1"></i> 15 991668744</li>
               <li><i class="icon-mail"></i> atelie.da.bubu@gmail.com</li>
             </ul>
-            </ul>         
+            </ul>
+                 
           </div>
         </div>
       </section>
       <div class="div-1"></div>
     </main>
-    <footer class="section">
+    <footer class="section">    
       <div class="container grid">
         <div class="brand">
           <a class="logo1 logo-alt" href="#home">Atelie.da.Bubu</a>
@@ -194,7 +269,7 @@
           <a href="https://instagram.com/atelie.da.bubu?utm_medium=copy_link" target="_blank">
             <i class="icon-instagram"></i>
           </a>
-          <a href="https://facebook.com" target="_blank">
+          <a href="https://www.facebook.com/bruna.deamatis.5" target="_blank">
             <i class="icon-facebook"></i
           ></a>
           <a href="https://wa.me/5515991668744?text=Atelie.da.bubu agradece seu contato. Em que posso ajudar?" target="_blank"

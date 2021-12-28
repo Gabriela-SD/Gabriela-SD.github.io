@@ -65,3 +65,7 @@ window.addEventListener('scroll', function () {
   backToTop()
   activateMenuAtCurrentSection()
 })
+
+function myFunction() {
+console.log(document.getElementById("demo").value)
+}

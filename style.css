@@ -26,7 +26,7 @@ img {
   width: 16rem;
   height: 16rem;
   border-radius: 50%;
-  
+
   /* width: 100%;
   height: auto;*/
 }
@@ -248,7 +248,7 @@ h3 {
 .imageAbertura {
   width: 16rem;
   height: 16rem;
-  border-radius: 50%;  
+  border-radius: 50%;
 }
 .txtAbertura {
   margin-left: 1.5rem;
@@ -279,8 +279,6 @@ h3 {
 /*SOBRE*/
 .txtAbout p {
   text-align: justify;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
 }
 
 /*GALERIA*/
@@ -306,28 +304,86 @@ h4 {
   color: rgb(41, 41, 41);
 }
 
+.pop { 
+  text-align: justify;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 1rem;
+  background: #f3f1f1;
+  z-index: 999; /*999 acima de totos os outros elemento */
+  opacity: 0; /*opacidade 0 significa elemento totalmente transparente*/
+  /*Com a propriedade transition, estamos informando ao navegador que o motor de renderização deve realizar a troca de forma suave, quando o elemento com a class pop sofrer uma mudança na propriedade opacity.A troca deve ser feita em 400 ms (milissegundos), utilizando o efeito ease-in para determinar o ritmo em que a transição será feita.*/
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none; /* indica ao navegador que o elemento não deve receber eventos realizados pelo mouse.*/
+  display: none; /*valor NONE permite desativar a exibição do elemento. Desse modo, o documento é renderizado como se o elemento não existisse. Já o valor BLOCK indica ao navegador que o elemento deve ser renderizado em bloco, juntamente com seus filhos ou elementos contidos nele. */
+}
+.pop:target {
+  /*block para div ficar visível; opacidade muda quando clicar no link/âncora; pointer auto possibilita a interação*/
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+a.close {
+  background-color: white;
+  color: var(--base-color);
+  line-height: 1.5rem; /*botão close, ajusta a altura que a letra X terá dentro do elemento.*/
+  position: absolute;
+  right: -10px;
+  text-align: center;
+  top: -8px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  border-radius: 1rem;
+}
+a.close:hover {
+  background-color: var(--base-color-second);
+  color: white;
+}
+
 /*ENCOMENDAS*/
 #services {
   width: 100%;
   height: 100%;
 }
 
-#services .container {
+/*#services .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: justify;
   align-items: center;
+}*/
+
+#myform {
+  width: 100%;
 }
 #services form {
   position: relative;
   background-color: var(--base-color);
-  padding: 4%;
+  padding: 2.3rem 0.5rem;
   border-radius: 0.25rem;
 }
 #services form label {
-  font-weight: bold;
-  color: var(--text-color-light);
+  font: 700 var(--body-font);
+  color: white;
+  display: flex;
 }
+.txt-place {
+  font: normal 1rem corbel;
+}
+
+.form-input {
+  margin: 0 2.5rem 1.2rem 2rem;
+}
+
 #services form input {
   max-width: 100%;
   width: 99%;
@@ -341,8 +397,9 @@ h4 {
   max-width: 100%; /*máximo para o txtarea não ultrapasse a largura do formulário, ou seja, limita à largura do pai form*/
   width: 99%;
   border: solid var(--base-color) 1px;
-  padding-left: 1%;
-  min-height: 100px;
+  padding: 0.5rem 0 0 0.5rem;
+  min-height: 6rem;
+  resize: vertical;
 }
 button {
   height: 3.5rem;
@@ -351,12 +408,12 @@ button {
   padding: 0 2rem;
   border-radius: 0.25rem;
   cursor: pointer;
-  font-size: 1.2rem;
+  font: 700 var(--body-font);
+  color: white;
 
   color: var(--text-color-light);
   background-color: var(--base-color);
   transition: background 0.3s;
-  
 }
 
 button:hover {
@@ -479,5 +536,132 @@ footer .social a:hover {
 /*large devices: > 992*/
 /*medium devices: > 767*/
 
-@media (min-width: 992px) {
+/*MEDIA QUERIES*/
+/* extra large devices: 1200 > */
+@media (min-width: 1200px) {
+  /* reusable classes */
+  .container {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section {
+    padding: 10rem 0;
+  }
+
+  .section h3 {
+    max-width: 32rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  p {
+    font-size: 1.7rem;
+  }
+
+  /* navigation */
+  nav .menu {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+    background-color: white;
+  }
+
+  nav .menu ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav .menu ul li a.title {
+    font: 400 1rem var(--body-font);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  nav .menu ul li a.title.active {
+    font-weight: bold;
+    -webkit-font-smoothing: auto;
+  }
+
+  nav .icon-menu {
+    display: none;
+  }
+
+  /* layout */
+  main {
+    margin-top: 6.5rem;
+  }
+  h3 {
+    font-size: 2.25rem;
+  }
+
+  /* home */
+  #home .container {
+    grid-auto-flow: column;
+    justify-content: space-around;
+    margin: 0 auto;
+  } /* VER */
+
+  #home .imageAbertura {
+    order: 1;
+  }
+
+  #home .txtAbertura {
+    order: 0;
+    /*max-width: 24rem;*/
+    text-align: justify;
+    justify-content: space-around;
+  }
+
+  /* galeria */
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  /* services */
+  #services .grid {
+    justify-items: center;
+  }
+
+  #myform {
+    width: 80%;
+  }
+
+  /* contact */
+  #contact .container {
+    grid-auto-flow: column;
+    align-items: center;
+  }
+
+  #contact .text {
+    max-width: 25rem;
+  }
+
+  /* footer */
+  footer.section {
+    padding: 3.75rem 0;
+  }
+
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer .logo {
+    font-size: 2.25rem;
+  }
 }
+/* large devices: 1023 > */
+/* large devices: 992 > */
+@media (min-width: 992px) {
+  h4 {
+    font-size: 1.7rem;
+  }
+}
+/* medium devices: 767 > */
