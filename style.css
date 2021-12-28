@@ -20,15 +20,7 @@ body {
   font: var(--body-font);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
-}
-
-img {
-  width: 16rem;
-  height: 16rem;
-  border-radius: 50%;
-
-  /* width: 100%;
-  height: auto;*/
+  background-color:rgb(250, 250, 250);
 }
 
 .grid {
@@ -57,8 +49,7 @@ a {
     right top,
     from(var(--base-color-second)),
     to(var(--base-color))
-  );
-  /*background-clip: text;*/
+  );  
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -192,13 +183,14 @@ nav.show div.icon-close {
 
 /*MAIN*/
 main {
-  margin-top: 6.5rem;
+  margin-top: 6.5rem;  
 }
 .container {
   /*div das seções*/
   width: 90%; /* ver */
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+  
 }
 h3 {
   margin-bottom: 2rem;
@@ -244,12 +236,19 @@ h3 {
   justify-content: space-between;
   text-align: justify;
   align-items: center;
+  
+  
 }
-.imageAbertura {
-  width: 16rem;
-  height: 16rem;
-  border-radius: 50%;
-}
+.image-abertura{  
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+    
+  
+    /* width: 100%;
+    height: auto;*/
+  }
+
 .txtAbertura {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -282,6 +281,15 @@ h3 {
 }
 
 /*GALERIA*/
+img.image{
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+
+  /* width: 100%;
+  height: auto;*/
+}
+
 .cards.grid {
   gap: 1.5rem;
 }
