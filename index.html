@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atelie da bubu</title>
+    <link rel="stylesheet" href="style.css" />
+    /*ícones*/
+    <link rel="stylesheet" href="Img/icons/style.css">
+     <!--scrollreveal https://scrollrevealjs.org/guide/hello-world.html-->
+     <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <header id="header" class="scroll">
+      <nav class="container">
+        <a href="https://instagram.com/atelie.da.bubu?utm_medium=copy_link" target="_blank" class="logo">Atelie.da.Bubu</a>      
+      <div class="menu">
+        <ul class="grid">
+          <li><a class="title" href="#home">Início</a></li>
+          <li><a class="title" href="#about">Sobre</a></li>
+          <li><a class="title" href="#galeria">Galeria</a></li>
+          <li><a class="title" href="#services">Encomendas</a></li>
+          <li><a class="title" href="#contact">Contatos</a></li>
+        </ul>      
+      </div>
+      <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
+      </nav>
+    </header>
+    <main>
+      <section class="section" id="home">
+        <div class="container grid">
+          <div>
+            <img class="imageAbertura" src="img/logo.png" alt="imagem logo">
+          </div>
+          <div class="txtAbertura">
+            <p> Bem-vindo ao site <strong class="logo">Atelie.da.Bubu</strong> fique à vontade para explorar nossa  <a href=#galeria >galeria</a> de aquarelas e fazer suas <a href="#services">encomendas</a>.</p>
+          </div>
+        </div>
+      </section >
+
+      <div class="div-1"></div>
+
+      <section class="section" id="about">
+        <h3>Sobre</h3>
+        <div class="container grid">
+         
+          <div class="txtAbout">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nesciunt asperiores dignissimos dolorum, iure dicta nisi sunt? Voluptates impedit, debitis magnam voluptas quod eius, nesciunt officia temporibus ab, nemo blanditiis.</p>
+        </div>
+      </div>        
+      </section>
+
+      <div class="div-2"></div>
+
+      <section class="section" id="galeria">
+        <h3>Galeria</h3>
+        <div class="container grid">
+          
+          <div class="cards grid">
+            <div class="card">
+              <i class="marcador"><img src="img/marcadorPrincipal.png"></i>
+              <h4 class="title">Marcador de Página</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                distinctio neque blanditiis, dolorem aperiam nulla explicabo
+                asperiores
+              </p>
+            </div>
+            <div class="card">
+              <i class="mar"><img src="img/marPrincipal.png"></i>
+              <h4 class="title">Mar</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                distinctio neque blanditiis, dolorem aperiam nulla explicabo
+                asperiores
+              </p>
+            </div>
+            <div class="card">
+              <i class="dog"><img src="img/dogPrincipal.png"></i>
+              <h4 class="title">Dogs</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                distinctio neque blanditiis, dolorem aperiam nulla explicabo
+                asperiores
+              </p>
+            </div>
+            <div class="card">
+              <i class="flores"><img src="Img/floresPrincipal.png"></i>
+              <h4 class="title">Flores</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                distinctio neque blanditiis, dolorem aperiam nulla explicabo
+                asperiores
+              </p>
+            </div>
+            <div class="card">
+              <i class="outros"></i>
+              <h4 class="title">Outros</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                distinctio neque blanditiis, dolorem aperiam nulla explicabo
+                asperiores
+              </p>
+            </div>
+          </div>
+             </section>
+
+             <div class="div-1"></div>
+
+      <section class="section" id="services">
+        
+          <h3>Encomendas</h3>
+          <div class="container grid">
+          <p>Faça sua encomenda preenchendo os campos a seguir ou entre em <a href="#contact">contato</a> com a gente!</p>
+          <form name="myform" id="myform">
+            <p class="nome">
+              <label for="nome">Nome: </label><br />
+              <input
+                type="text"
+                id="nomeid"
+                placeholder="Ex: Fulano da Silva"
+                required="required"
+                name="nome"
+              />
+            </p>
+            <p class="fone">
+              <label for="fone"> Fone: </label> <br />
+              <input
+                type="phone"
+                id="foneid"
+                placeholder="(xx)xxxxx-xxxx"
+                name="fone"
+              />
+            </p>
+            <p>
+              <label for="email"> Email: </label> <br />
+              <input
+                type="email"
+                id="emailid"
+                placeholder="fulano@mail.com"
+                name="email"
+                required="required"
+              />
+            </p>
+            <p>
+              <textarea placeholder="mensagem" required="required"></textarea>
+            </p>
+            <button type="submit" form="myform">Enviar</button>
+          </form>
+        </div>
+      </section>
+
+      <div class="div-2"></div>
+
+      <section class="section" id="contact">
+          <h3>Contatos</h3>
+         <div class="container grid">
+          <p>
+            Entre em contato com  <strong class="logo">Atelie.da.Bubu </strong>, queremos tirar suas dúvidas,
+              ouvir suas críticas e sugestões.
+          </p>
+          
+          <div class="links">
+            <ul class="grid text">
+              <a 
+              href="https://wa.me/5515991668744?text=Atelie.da.bubu agradece seu contato. Em que posso ajudar?"
+              class="button"
+              target="_blank"
+              ><i class="icon-whatsapp"></i> Entrar em contato</a>
+          </div>
+
+          <div class="links">
+            <ul class="grid">
+              <li><i class="icon-phone1"></i> 15 991668744</li>
+              <li><i class="icon-mail"></i> atelie.da.bubu@gmail.com</li>
+            </ul>
+            </ul>         
+          </div>
+        </div>
+      </section>
+      <div class="div-1"></div>
+    </main>
+    <footer class="section">
+      <div class="container grid">
+        <div class="brand">
+          <a class="logo1 logo-alt" href="#home">Atelie.da.Bubu</a>
+          <p>©2021 Atelie.da.Bubu</p>
+          <p>Todos os direitos reservados.</p>
+        </div>
+
+        <div class="social grid">
+          <a href="https://instagram.com/atelie.da.bubu?utm_medium=copy_link" target="_blank">
+            <i class="icon-instagram"></i>
+          </a>
+          <a href="https://facebook.com" target="_blank">
+            <i class="icon-facebook"></i
+          ></a>
+          <a href="https://wa.me/5515991668744?text=Atelie.da.bubu agradece seu contato. Em que posso ajudar?" target="_blank"
+            ><i class="icon-whatsapp"></i
+          ></a>             
+        </div>
+      </div>
+    </footer>
+    <a href="#home" class="back-to-top"><i class="icon-arrow-up"></i></a>
+
+    
+    <script src="main.js">  </script>
+  </body>
+</html>
