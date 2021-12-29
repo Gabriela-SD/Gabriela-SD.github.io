@@ -166,7 +166,7 @@ nav ul li a.active::after {
   color: var(--base-color);
   font-size: 1.5rem;
   cursor: pointer;
-  }
+}
 
 nav .icon-close {
   visibility: hidden;
@@ -231,26 +231,20 @@ h3 {
   overflow:hidden ;
 }*/ /* VER: A overflowpropriedade especifica se deve cortar o conteúdo ou adicionar barras de rolagem quando o conteúdo de um elemento é muito grande para caber na área especificada.*/
 
-#home .container {
-  /*margin: 0;*/
-  display: flex;
-  justify-content: space-between;
-  text-align: justify;
-  align-items: center;
+.image-logo {
+  text-align: center;
 }
 .image-abertura {
   width: 16rem;
   height: 16rem;
   border-radius: 50%;
-
   /* width: 100%;
     height: auto;*/
 }
 
 .txtAbertura {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
   font-size: x-large;
+  text-align: justify;
 }
 
 #home a {
@@ -567,6 +561,7 @@ footer .social a:hover {
   }
 
   /* navigation */
+
   nav .menu {
     opacity: 1;
     visibility: visible;
@@ -591,7 +586,7 @@ footer .social a:hover {
   }
 
   nav .icon-menu {
-    display:none;
+    display: none;
   }
 
   /* layout */
@@ -605,11 +600,9 @@ footer .social a:hover {
   /* home */
   #home .container {
     grid-auto-flow: column;
-    justify-content: space-around;
-    margin: 0 auto;
-  } /* VER */
+    align-items: center;
+  }
 
-  
   #home .imageAbertura {
     order: 1;
   }
@@ -660,7 +653,6 @@ footer .social a:hover {
     align-items: center;
     justify-content: space-between;
   }
-  
 
   footer .logo {
     font-size: 2.25rem;
