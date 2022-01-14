@@ -58,8 +58,7 @@ a {
 #header {
   border-bottom: 1px solid #e4e4e4;
   margin-bottom: 2rem; /* =32px */
-  display: flex; /* ver */
-
+  display: flex; 
   position: fixed;
   top: 0;
   left: 0;
@@ -123,13 +122,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  /*hover quando o usuário passar o mouse sobre o menu*/
   color: var(--base-color-second);
 }
 
 /*nav ul li a.active {
   color: var(--base-color);
-}*/ /* ver o que é active*/
+}*/ /* ver active*/
 
 nav ul li a:hover::after {
   /*pseudo elemento after qdo passaor o mouse e aparece o traço*/
@@ -142,7 +140,7 @@ nav ul li a:hover::after {
   bottom: 0;
 }
 
-/* ver o que é active*/
+/* ver active*/
 /*nav ul li a::after {
   content: '';
   width: 0%;
@@ -227,10 +225,6 @@ h3 {
 }
 
 /*HOME*/
-/*#home {
-  overflow:hidden ;
-}*/ /* VER: A overflowpropriedade especifica se deve cortar o conteúdo ou adicionar barras de rolagem quando o conteúdo de um elemento é muito grande para caber na área especificada.*/
-
 .image-logo {
   text-align: center;
 }
@@ -252,11 +246,9 @@ h3 {
   position: relative;
 }
 #home a:hover {
-  /*hover quando o usuário passar o mouse sobre */
   color: var(--base-color-second);
 }
 #home a:hover::after {
-  /*pseudo elemento after qdo passar o mouse e aparece o traço*/
   content: ' ';
   width: 100%;
   height: 2px;
@@ -277,7 +269,6 @@ img.image {
   width: 16rem;
   height: 16rem;
   border-radius: 50%;
-
   /* width: 100%;
   height: auto;*/
 }
@@ -425,11 +416,9 @@ button:hover {
   position: relative;
 }
 #services a:hover {
-  /*hover quando o usuário passar o mouse sobre */
   color: var(--base-color-second);
 }
 #services a:hover::after {
-  /*pseudo elemento after qdo passar o mouse e aparece o traço*/
   content: ' ';
   width: 100%;
   height: 2px;
