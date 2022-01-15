@@ -58,7 +58,7 @@ a {
 #header {
   border-bottom: 1px solid #e4e4e4;
   margin-bottom: 2rem; /* =32px */
-  display: flex; 
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
@@ -265,79 +265,72 @@ h3 {
 }
 
 /*GALERIA*/
-img.image {
-  width: 16rem;
-  height: 16rem;
-  border-radius: 50%;
-  /* width: 100%;
-  height: auto;*/
+#galeria {
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+  padding: 4.38rem 0;
 }
-
-.cards.grid {
-  gap: 1.5rem;
+.container-card {
+  position: relative;
+  /*width: 6.875rem;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1.875rem;
+  height: 100%;
 }
-
-.card {
-  padding: 3.625rem 2rem;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
-  border-radius: 1rem 1rem 1rem 1rem;
+.container-card .card {
+  font-size: 1.5rem;
+  max-width: 250px;
+  height: 215px;
+  position: relative;
+  background-color: #27ddc5;
+  margin: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 202px rgba(0, 0, 0, 0.2);
+  transition: 0.3 ease-in-out;
+  border-radius: 0.4rem;
+}
+.container-card .card:hover {
+  height: 35rem;
+}
+.container-card .card .image {
+  position: relative;
+  width: 420px;
+  height: 260px;
+  top: -3.75rem;
+  left: 1.25rem;
+  z-index: 1;
+  /*box-shadow: 0 5px 20px rgba(0,0,0,0.2);*/
+}
+.card .image {
+  max-width: 100%;
+  height: 260px;
+  width: 260px;
+  border-radius: 0.4rem;
+}
+.container-card .card .content {
+  position: relative;
+  margin-top: -8.75rem;
+  padding: 0.625rem 1rem;
   text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  font: corbel bold;
+  color: #000;
 }
-.card i {
-  display: block;
-  margin-bottom: 1.5rem;
+.content a {
+  color: aliceblue;
 }
-
-h4 .title {
-  margin-bottom: 0.75rem;
-}
-h4 {
-  color: rgb(41, 41, 41);
-}
-
-.pop {
-  text-align: justify;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: 1rem;
-  background: #f3f1f1;
-  z-index: 999; /*999 acima de totos os outros elemento */
-  opacity: 0; /*opacidade 0 significa elemento totalmente transparente*/
-  /*Com a propriedade transition, estamos informando ao navegador que o motor de renderização deve realizar a troca de forma suave, quando o elemento com a class pop sofrer uma mudança na propriedade opacity.A troca deve ser feita em 400 ms (milissegundos), utilizando o efeito ease-in para determinar o ritmo em que a transição será feita.*/
-  -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;
-  pointer-events: none; /* indica ao navegador que o elemento não deve receber eventos realizados pelo mouse.*/
-  display: none; /*valor NONE permite desativar a exibição do elemento. Desse modo, o documento é renderizado como se o elemento não existisse. Já o valor BLOCK indica ao navegador que o elemento deve ser renderizado em bloco, juntamente com seus filhos ou elementos contidos nele. */
-}
-.pop:target {
-  /*block para div ficar visível; opacidade muda quando clicar no link/âncora; pointer auto possibilita a interação*/
-  display: block;
+.container-card .card:hover .content {
+  visibility: visible;
   opacity: 1;
-  pointer-events: auto;
-}
-
-a.close {
-  background-color: white;
-  color: var(--base-color);
-  line-height: 1.5rem; /*botão close, ajusta a altura que a letra X terá dentro do elemento.*/
-  position: absolute;
-  right: -10px;
-  text-align: center;
-  top: -8px;
-  width: 24px;
-  text-decoration: none;
-  font-weight: bold;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  border-radius: 1rem;
-}
-a.close:hover {
-  background-color: var(--base-color-second);
-  color: white;
+  margin-top: -2.5rem;
+  transition-delay: 0.3s;
 }
 
 /*ENCOMENDAS*/
@@ -545,9 +538,6 @@ footer .social a:hover {
     margin-left: auto;
     margin-right: auto;
   }
-  p {
-    font-size: 1.7rem;
-  }
 
   /* navigation */
 
@@ -604,14 +594,11 @@ footer .social a:hover {
   }
 
   /* galeria */
-  .cards {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
 
-  .card {
+  /*.card {
     padding-left: 3rem;
     padding-right: 3rem;
-  }
+  }*/
 
   /* services */
   #services .grid {
@@ -649,9 +636,9 @@ footer .social a:hover {
 }
 /* large devices: 1023 > */
 /* large devices: 992 > */
-@media (min-width: 992px) {
+/*@media (min-width: 992px) {
   h4 {
     font-size: 1.7rem;
   }
-}
+}*/
 /* medium devices: 767 > */
