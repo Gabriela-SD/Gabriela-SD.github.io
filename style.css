@@ -5,12 +5,12 @@
 }
 :root {
   font-size: 100%; /*16px*/
-  --base-color: #27ddc5;
-  --base-color-second: #00c3ff;
+  --base-color: #2b7974;
+  --base-color-second: #2659a7;
   --text-color-light: hsl(0 0% 98%);
 
   --text-color: rgb(68, 68, 68);
-  --body-font: normal 1.5rem corbel;
+  --body-font: normal 1.5rem trocchi;
 }
 
 html {
@@ -286,7 +286,7 @@ h3 {
   max-width: 250px;
   height: 215px;
   position: relative;
-  background-color: #27ddc5;
+  background-color: var(--base-color);
   margin: 3rem 1rem;
   display: flex;
   flex-direction: column;
@@ -294,7 +294,8 @@ h3 {
   transition: 0.3 ease-in-out;
   border-radius: 0.4rem;
 }
-.container-card .card:hover {
+.container-card .card:hover,
+.container-card .card:focus {
   height: 35rem;
 }
 .container-card .card .image {
@@ -320,8 +321,8 @@ h3 {
   visibility: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
-  font: corbel bold;
-  color: #000;
+  font: trocchi bold;
+  color: rgb(242, 242, 243);
 }
 .content a {
   color: aliceblue;
