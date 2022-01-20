@@ -41,7 +41,7 @@ scrollReveal.reveal(
   #about h3, #about .txtAbout
   #galeria h3, #galeria .card,
   #services h3, #services p,
-  #contact h3, #contact .grid
+  #contact h3, #contact .grid,
   `,
   {
     interval: 100
