@@ -259,7 +259,7 @@ h3 {
   height: 100%;
 }
 .container-card .card {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   max-width: 250px;
   height: 215px;
   position: relative;
@@ -273,7 +273,7 @@ h3 {
 }
 .container-card .card:hover,
 .container-card .card:focus {
-  height: 35rem;
+  height: 36rem;
 }
 .container-card .card .image {
   position: relative;
@@ -294,23 +294,24 @@ h3 {
   position: relative;
   margin-top: -8.75rem;
   padding: 0.625rem 1rem;
-  text-align:left;
+  text-align: left;
   visibility: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
   font: trocchi bold;
   color: rgb(242, 242, 243);
 }
-.content h4{
+.content h4 {
   text-align: center;
 }
-.content p, .content ul{
+.content p,
+.content ul {
   font-size: 1.25rem;
 }
 .content a {
   color: aliceblue;
-  text-align:center;
-  border-bottom: 0.6px solid #FFF2E7;  
+  text-align: center;
+  border-bottom: 0.6px solid #fff2e7;
 }
 
 .container-card .card:hover .content {
@@ -319,7 +320,6 @@ h3 {
   margin-top: -2.5rem;
   transition-delay: 0.3s;
 }
-
 
 /*ENCOMENDAS*/
 #services {
@@ -389,7 +389,9 @@ button {
 }
 
 button:hover {
-  background: #51ceae;
+  background: rgba(81, 206, 174, 0.8);
+  color:var(--base-color);
+  transition: color 0.2s;
 }
 
 #services a {
@@ -528,7 +530,6 @@ footer .social a:hover {
   }
 
   /* navigation */
-
   nav .menu {
     opacity: 1;
     visibility: visible;
