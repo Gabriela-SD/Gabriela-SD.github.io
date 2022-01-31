@@ -273,7 +273,7 @@ h3 {
 }
 .container-card .card:hover,
 .container-card .card:focus {
-  height: 36rem;
+  height: 39rem;
 }
 .container-card .card .image {
   position: relative;
