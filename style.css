@@ -307,6 +307,7 @@ h3 {
 .content p,
 .content ul {
   font-size: 1.25rem;
+  text-align: justify;
 }
 .content a {
   color: aliceblue;
