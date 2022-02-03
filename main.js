@@ -47,6 +47,7 @@ scrollReveal.reveal(
     interval: 100
   }
 )
+
 /* Botão voltar para o topo */
 const backToTopButton = document.querySelector('.back-to-top')
 
