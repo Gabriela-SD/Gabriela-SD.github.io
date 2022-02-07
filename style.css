@@ -262,7 +262,7 @@ h3 {
 .container-card .card {
   font-size: 1.4rem;
   max-width: 250px;
-  height: 220px;
+  /*height: 260px;*/
   position: relative;
   background-color: var(--base-color);
   margin: 3rem 1rem;
@@ -272,10 +272,7 @@ h3 {
   transition: 0.3 ease-in-out;
   border-radius: 0.4rem;
 }
-.container-card .card:hover,
-.container-card .card:focus {
-  height: 39rem;
-}
+
 .container-card .card .image {
   position: relative;
   width: 420px;
@@ -286,18 +283,19 @@ h3 {
   /*box-shadow: 0 5px 20px rgba(0,0,0,0.2);*/
 }
 .card .image {
-  max-width: 100%;
-  
+  max-width: 100%;  
   border-radius: 0.4rem;
   object-fit: cover;
 }
 .container-card .card .content {
   position: relative;
-  margin-top: -8.75rem;
+  height: 380px;
+  /*margin-top: -8.75rem;*/
+  margin-top: -2.75rem;
   padding: 0.625rem 1rem;
   text-align: left;
-  visibility: hidden;
-  opacity: 0;
+  /*visibility: hidden;*/
+  /*opacity: 0;*/
   transition: 0.3s ease-in-out;
   font: trocchi bold;
   color: rgb(242, 242, 243);
@@ -314,13 +312,6 @@ h3 {
   color: aliceblue;
   text-align: center;
   border-bottom: 0.6px solid #fff2e7;
-}
-
-.container-card .card:hover .content {
-  visibility: visible;
-  opacity: 1;
-  margin-top: -2.5rem;
-  transition-delay: 0.3s;
 }
 
 /*ENCOMENDAS*/
@@ -585,11 +576,40 @@ footer .social a:hover {
   }
 
   /* galeria */
-
-  /*.card {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }*/
+  
+  .container-card .card {
+    height: 260px;    
+  }
+  .container-card .card:hover,
+  .container-card .card:focus {
+    height: 35rem;
+  }
+  .container-card .card .image {
+    position: relative;
+    width: 420px;
+    height: 260px;
+    top: -3.75rem;
+    left: 1.25rem;
+    z-index: 1;
+    /*box-shadow: 0 5px 20px rgba(0,0,0,0.2);*/
+  }
+  
+  .container-card .card .content {
+    position: relative;
+    margin-top: -8.6rem;    
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    
+  }
+    
+  .container-card .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -3rem;
+    transition-delay: 0.3s;
+  }
+  
 
   /* services */
   #services .grid {
