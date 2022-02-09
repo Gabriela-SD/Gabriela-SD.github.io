@@ -273,6 +273,10 @@ h3 {
   border-radius: 0.4rem;
 }
 
+.container-card .card:hover {
+  -webkit-transform: scale(1.01);
+  transform: scale(1.01);}
+
 .container-card .card .image {
   position: relative;
   width: 420px;
@@ -430,26 +434,31 @@ button:hover {
 /*FOOTER*/
 footer {
   background: var(--base-color);
+  color: var(--text-color-light);
+  font-size: 1rem;
 }
 
 footer.section {
-  padding: 4rem 0;
+  padding: 1rem 0;
 }
 
 footer .logo1 {
   display: inline-block;
-  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
   color: var(--text-color-light);
 }
 
 footer .brand p {
-  color: var(--text-color-light);
   margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+footer .term a{
+  color: var(--text-color-light);
   font-size: 1rem;
 }
 
 footer i {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--text-color-light);
 }
 
@@ -630,26 +639,23 @@ footer .social a:hover {
     max-width: 25rem;
   }
 
-  /* footer */
-  footer.section {
-    padding: 3.75rem 0;
-  }
-
-  footer .container {
-    grid-auto-flow: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  footer .logo {
-    font-size: 2.25rem;
-  }
+ 
 }
-/* large devices: 1023 > */
-/* large devices: 992 > */
-/*@media (min-width: 992px) {
-  h4 {
-    font-size: 1.7rem;
-  }
-}*/
+
 /* medium devices: 767 > */
+@media (min-width: 767px) {
+ /* footer */
+ footer.section {
+  padding: 3.75rem 0;
+}
+
+footer .container {
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .logo {
+  font-size: 2.25rem;
+}
+}
