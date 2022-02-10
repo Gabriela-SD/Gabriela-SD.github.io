@@ -313,9 +313,9 @@ h3 {
   text-align: justify;
 }
 .content a {
-  color: aliceblue;
+  color: #fff;
   text-align: center;
-  border-bottom: 0.6px solid #fff2e7;
+  border-bottom: 0.6px solid #fff;
 }
 
 /*ENCOMENDAS*/
