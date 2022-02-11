@@ -1,23 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  :root {
-    font-size: 100%; 
-    --base-color: #1d6e69;
-    --base-color-second: #2659a7;
-    --text-color-light: #fafafa;
-  
-    --text-color: #444444;
-    --body-font: normal 1.5rem montserrat;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+:root {
+  --base-color: #1d6e69;
+  --base-color-second: #2659a7;
+  --text-color-light: #fafafa;
+  --text-color: #444444;
+  --body-font: 'Montserrat', sans-serif;
+  --body-font-size: 1.15rem;
+}
   
   html {
     scroll-behavior: smooth;
   }
   body {
-    font: var(--body-font);
+    font-family: var(--body-font);
+    font-weight: 400;
     color: var(--text-color);
     -webkit-font-smoothing: antialiased;
     
@@ -31,28 +33,8 @@
     list-style: none;
   }
   
-  a {
-    font-weight: bold;
-    color: var(--base-color);
-    text-decoration: none;
-  }
-  a {
-    transition: color 0.2s;
-    position: relative;
-  }
-  a:hover {
-    color: var(--base-color-second);
-  }
- a:hover::after {
-    content: ' ';
-    width: 100%;
-    height: 2px;
-    background: var(--base-color-second);
   
-    position: absolute;
-    left: 0;
-    bottom: 0;
-  }
+  
   /*CABEÇALHO*/
 #header {
   border-bottom: 1px solid #e4e4e4;
@@ -87,7 +69,7 @@ nav {
   width: 100%;
 }
 nav .title {
-  font-size: 35pt;
+  font-size: 30pt;
 }
 nav .menu {
   opacity: 0;
@@ -96,6 +78,7 @@ nav .menu {
   transition: 0.2s;
   background-color: #e4e4e4;
   width: 1%;
+  
 }
 nav.show .menu {
   opacity: 1;
@@ -107,6 +90,7 @@ nav.show .menu {
   left: 0;
   display: grid;
   place-content: center;
+  
 }
 nav .show ul .grid {
   /*grid apenas quando o menu estiver aberto*/
@@ -122,8 +106,8 @@ nav ul li {
   font-size: 1.5rem;
   text-align: center;
 }
-
 nav ul li a {
+  color: var(--base-color);
   transition: color 0.2s;
   position: relative;
 }
@@ -142,6 +126,9 @@ nav ul li a:hover::after {
   left: 0;
   bottom: 0;
 }
+
+
+
 
 /* toggle menu */
 .toggle {
@@ -170,20 +157,41 @@ nav.show div.icon-close {
   #galeria{
     margin-top: 5rem;
   }
-
-  h3 {
-    margin-bottom: 1rem;
-    width: 90%;    
-    color: rgb(41, 41, 41);
-}
-
-.txt{
-  margin-bottom: 1rem;
-}
   .container{
     margin: 0 0.75rem;
     overflow: hidden;
   }
+  h3{
+    font-size: 1.25rem;
+  }
+ 
+.txt{
+  font-size: var(--body-font-size);
+  margin-bottom: 1rem;
+}
+.txt a {
+  font-weight: bold;
+  color: var(--base-color);
+  text-decoration: none;
+}
+.txt a {
+  transition: color 0.2s;
+  position: relative;
+}
+.txt a:hover {
+  color: var(--base-color-second);
+}
+.txt a:hover::after {
+  content: ' ';
+  width: 100%;
+  height: 2px;
+  background: var(--base-color-second);
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+  
 
   .carousel{
     max-width: 100vw;
@@ -314,18 +322,35 @@ footer .social a:hover {
     -webkit-font-smoothing: antialiased;
     color: var(--text-color-light);
   }
-  
-
-  nav .menu ul li a.title.active {
-    font-weight: bold;
-    -webkit-font-smoothing: auto;
-  }
+   
 
   nav .icon-menu {
     display: none;
   }
 
+  nav ul li a {
+    transition: color 0.5s; 
+    position: relative;
+  }
   
+  nav ul li a:hover {    
+    font-size:1.2em;
+    color: white;
+    text-decoration: none;
+    -webkit-text-stroke: 0.5px; 
+   
+    transition-timing-function: ease-in-out;
+  }
+  nav ul li a:hover::after {
+    /*pseudo elemento after qdo passaor o mouse e aparece o traço*/
+    content: ' ';
+    width: 100%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
   h3 {
     font-size: 2rem;
   }
