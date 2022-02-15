@@ -167,7 +167,13 @@
         <div class="container grid">
           <p class="txtServices">Faça sua encomenda preenchendo os campos a seguir ou entre em <a href="#contact">contato</a> com a gente!</p> <p>Os dados informados serão utilizados exclusivamente para contato sobre as encomendas. </p>
           
-          <form name="myform" id="myform" action="https://formsubmit.co/ateliedabubu@gmail.com" method="POST">
+          <form 
+          name="myform" 
+          id="myform" 
+          action="https://formsubmit.co/ateliedabubu@gmail.com" 
+          method="POST" 
+          enctype="multipart/form-data">
+
             <div class="form-input">
               <label for="nome">Nome: </label>
               <input
@@ -177,18 +183,24 @@
                 placeholder="Ex: Fulano da Silva"
                 required="required"
                 name="nome"
+                
               />
             </div>
             <div class="form-input">
-              <label for="fone"> Fone: </label> 
-           <input type="phone" name="fone" required="required" placeholder="(xx)xxxxxxxxx" onkeyup="
+            <label for="fone"> Fone: </label> 
+            <input 
+            type="phone" 
+            name="fone" 
+            required="required" 
+            placeholder="(xx)xxxxxxxxx" onkeyup="
                 var fone = this.value;
                 if (fone.match(/^\d{2}$/) !== null) {
                    this.value = '(' + fone + ')';
                } else if (fone.match(/^\d{5}\-\d{4}$/) !== null) {
                    this.value = fone + '-';
                 }  
-                " maxlength="13">
+                " maxlength="13"
+                >
             </div>
             <div class="form-input">
               <label for="email"> Email: </label> 
@@ -199,18 +211,27 @@
                 placeholder="fulano@mail.com"
                 name="email"
                 required="required"
+               
               />
+            </div>
+            <div class="form-input">
+              <label for="file"> Envie a foto: </label> 
+              <input 
+              type="file" 
+              name="attachment" 
+              accept="image/png, image/jpeg" >
+              
             </div>
             <div class="form-input">
               <label for="email"> Faça seu pedido aqui: </label> 
               <textarea class="txt-place" placeholder="Descreva o produto que pretende encomendar, nós entraremos em contato para mais detalhes." 
-              name="mensagem" required="required"></textarea>
+              name="mensagem"></textarea>
             </div>
             <div class='form-input' >
             <button type="submit" form="myform">Enviar</button></div>
             <div>
             <input type="hidden" name="_next" value="https://gabriela-sd.github.io/email.html">
-            <input type = "hidden" name = "_autoresponse" value = "recebemos sua mensagem em breve entraremos em contato. (retorno de resposta em até 24)">
+            <input type = "hidden" name = "_autoresponse" value = "recebemos sua mensagem em breve entraremos em contato. (retorno de resposta em até 24 horas)">
             <input type = "hidden" name = "_cc" value = "gabriela.deamatis@gmail.com"></div>
 
           </form>
